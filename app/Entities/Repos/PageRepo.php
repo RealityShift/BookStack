@@ -58,6 +58,7 @@ class PageRepo extends EntityRepo
         // Hold the old details to compare later
         $oldHtml = $page->html;
         $oldName = $page->name;
+        $oldMetaDescrip = $page->meta_descrip;
 
         // Prevent slug being updated if no name change
         if ($page->name !== $input['name']) {
@@ -85,7 +86,7 @@ class PageRepo extends EntityRepo
         $this->userUpdatePageDraftsQuery($page, $userId)->delete();
 
         // Save a revision after updating
-        if ($oldHtml !== $input['html'] || $oldName !== $input['name'] || $input['summary'] !== null) {
+        if ($oldHtml !== $input['html'] || $oldName !== $input['name'] || $input['summary'] !== null || $input['meta_descrip'] !== $oldMetaDescrip) {
             $this->savePageRevision($page, $input['summary']);
         }
 

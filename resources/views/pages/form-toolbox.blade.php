@@ -7,6 +7,7 @@
         @if(userCan('attachment-create-all'))
             <span toolbox-tab-button="files" title="{{ trans('entities.attachments') }}">@icon('attach')</span>
         @endif
+        <span toolbox-tab-button="meta" title="{{ trans('entities.meta_descrip') }}" class="active">@icon('hashtag')</span>
     </div>
 
     <div toolbox-tab-content="tags">

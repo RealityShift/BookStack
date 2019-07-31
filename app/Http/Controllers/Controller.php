@@ -66,6 +66,15 @@ abstract class Controller extends BaseController
     }
 
     /**
+     * Adds the meta description into the view..
+     * @param $meta_descrip
+     */
+    public function setMetaDescrip($meta_descrip)
+    {
+        view()->share('meta_descrip', $meta_descrip);
+    }
+
+    /**
      * On a permission error redirect to home and display.
      * the error as a notification.
      */

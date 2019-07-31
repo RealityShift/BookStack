@@ -184,6 +184,7 @@ class PageController extends Controller
 
         Views::add($page);
         $this->setPageTitle($page->getShortName());
+        $this->setMetaDescrip($page->meta_descrip);
         return view('pages.show', [
             'page' => $page,'book' => $page->book,
             'current' => $page,

@@ -16,7 +16,7 @@
                 <input type="hidden" name="_method" value="PUT">
             @endif
             @include('pages.form', ['model' => $page])
-            @include('pages.form-toolbox')
+            @include('pages.form-toolbox', ['model' => $page])
         </form>
     </div>
     

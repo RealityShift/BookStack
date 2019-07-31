@@ -4,7 +4,7 @@ use BookStack\Uploads\Attachment;
 
 class Page extends Entity
 {
-    protected $fillable = ['name', 'html', 'priority', 'markdown'];
+    protected $fillable = ['name', 'html', 'priority', 'markdown', 'meta_descrip'];
 
     protected $simpleAttributes = ['name', 'id', 'slug'];
 

@@ -9,6 +9,9 @@
     <meta name="base-url" content="{{ baseUrl('/') }}">
     <meta charset="utf-8">
 
+    @if(isset($meta_descrip))
+    <meta name="description" content="{{$meta_descrip}}">
+
     <!-- Styles and Fonts -->
     <link rel="stylesheet" href="{{ versioned_asset('dist/styles.css') }}">
     <link rel="stylesheet" media="print" href="{{ versioned_asset('dist/print-styles.css') }}">
