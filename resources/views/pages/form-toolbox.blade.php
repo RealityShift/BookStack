@@ -119,4 +119,11 @@
         </div>
     @endif
 
+    <div toolbox-tab-content="meta">
+        <h4>{{ trans('entities.meta_descrip') }}</h4>
+        <div class="px-l">
+            <textarea name="meta_descrip">@if(isset($model) || old('meta_descrip')){{htmlspecialchars( $model->meta_descrip)}}@endif</textarea>
+        </div>
+    </div>
+
 </div>

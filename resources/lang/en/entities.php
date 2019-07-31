@@ -236,6 +236,7 @@ return [
 
     // Editor Sidebar
     'page_tags' => 'Page Tags',
+    'meta_descrip' => 'Meta Description',
     'chapter_tags' => 'Chapter Tags',
     'book_tags' => 'Book Tags',
     'shelf_tags' => 'Shelf Tags',
