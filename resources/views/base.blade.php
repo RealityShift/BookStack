@@ -11,6 +11,7 @@
 
     @if(isset($meta_descrip))
     <meta name="description" content="{{$meta_descrip}}">
+    @endif
 
     <!-- Styles and Fonts -->
     <link rel="stylesheet" href="{{ versioned_asset('dist/styles.css') }}">
